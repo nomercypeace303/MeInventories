@@ -1,0 +1,15 @@
+#
+# Please don't change the PluginInfo, unless you know what you're doing
+#
+
+PluginInfo:
+  FirstStart: true
+  Version: 1.0.0
+  # The file name in plugin/MeInventories/Languages/EX_ex.yml
+  Language: EN_en.yml
+
+InventorySettings:
+  Type: blacklist
+  # UUID only
+  List:
+  InventoryPath: plugin/MeInvetories/inventory.yml
