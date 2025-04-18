@@ -28,4 +28,5 @@ public final class MeInventories extends JavaPlugin {
     }
 
     public static MeInventories getMain(){return main;}
+
 }
