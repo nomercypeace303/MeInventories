@@ -12,8 +12,8 @@ public final class MeInventories extends JavaPlugin {
         main = this;
 
         /*
-        Configuration logic, when the configuration doesn't exist, or its blank,
-        it creates the default configuration file
+            Configuration logic, when the configuration doesn't exist, or its blank,
+            it creates the default configuration file
         */
 
         if (getConfig().getKeys(true).isEmpty()) {
