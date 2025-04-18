@@ -14,11 +14,9 @@ public class YamlFileHandler {
     private final FileConfiguration config;
     private final Plugin plugin = MeInventories.getMain();
 
-    //------------------------------------------------------------------------------------------------------------------
     /*
         Costruttore
     */
-    //------------------------------------------------------------------------------------------------------------------
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public YamlFileHandler(String filePath) {
         this.file = new File(filePath);
@@ -38,11 +36,9 @@ public class YamlFileHandler {
         this.config = YamlConfiguration.loadConfiguration(file);
     }
 
-    //------------------------------------------------------------------------------------------------------------------
     /*
         Tutti i metodi per il file
     */
-    //------------------------------------------------------------------------------------------------------------------
     public void set(String path, Object value) {
         config.set(path, value);
     }
@@ -60,11 +56,9 @@ public class YamlFileHandler {
         return config.contains(path);
     }
 
-    //------------------------------------------------------------------------------------------------------------------
     /*
         Tutti i getters
     */
-    //------------------------------------------------------------------------------------------------------------------
     public Object get(String path) {return config.get(path);}
     public String getString(String path) {return config.getString(path);}
     public int getInt(String path) {return config.getInt(path);}
