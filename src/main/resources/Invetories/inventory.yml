@@ -1,0 +1,47 @@
+InventorySettings:
+  InventoryPath: plugin/MeInventories/Inventories/inventory.yml
+  Type: blacklist
+  # UUID only
+  List:
+    - '73548558-7aa4-4cd5-9468-22bd9756187e'
+    - '30a4a162-815d-4ff6-bc77-ab7d1294bf1d'
+  Slots:
+    1:
+      SlotType: Item
+      Type: DIAMOND_SWORD
+      Name: '<blue>Diamond Sword'
+      Lore:
+        - 'nice sword'
+      CustomModelData: '104'
+      NBT:
+        - 'lucky ahh bitch'
+      Interactions:
+        Disable: true
+        Commands:
+          - 'help'
+        Messages:
+          - '<red>Interaction!'
+    2:
+      SlotType: Backpack
+      BackpackSlots: 2-6
+      Backpacks:
+        Small:
+          Unlocks: 2-3
+          Type: DIAMOND_SWORD
+          Name: '<blue>Diamond Sword'
+          Lore:
+            - 'nice sword'
+          CustomModelData: '104'
+          NBT:
+            - 'lucky ahh bitch'
+        Medium:
+          Unlocks: 2-3
+          Type: DIAMOND_SWORD
+          Name: '<blue>Diamond Sword'
+          Lore:
+            - 'nice sword'
+          CustomModelData: '104'
+          NBT:
+            - 'lucky ahh bitch'
+
+

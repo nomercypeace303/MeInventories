@@ -26,7 +26,7 @@ public final class MeInventories extends JavaPlugin {
             it creates the default inventory file
         */
         if (getConfig().getBoolean("PluginInfo.FirstStart", true)) {
-            YamlFileHandler firstStartFile = new YamlFileHandler("plugin/MeInvetories/invetory.yml");
+            YamlFileHandler firstStartFile = new YamlFileHandler("plugin/MeInvetories/Inventories/inventory.yml");
             firstStartFile.set("Inventory.Slots.1.Item.Type", "DIAMOND_SWORD");
             getConfig().set("PluginInfo.FirstStart", false);
         }

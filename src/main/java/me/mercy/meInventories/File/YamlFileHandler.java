@@ -28,7 +28,7 @@ public class YamlFileHandler {
                 file.createNewFile();
             }
         } catch (IOException e) {
-            plugin.getLogger().severe("Errore nella creazione del file: " + filePath);
+            plugin.getLogger().severe("An error occured upon creating: " + filePath);
             plugin.getLogger().severe(e.toString());
         }
 
@@ -39,17 +39,17 @@ public class YamlFileHandler {
     /*
         Tutti i metodi per il file
     */
-    public void set(String path, Object value) {
-        config.set(path, value);
-    }
-
     public void save() {
         try {
             config.save(file);
         } catch (IOException e) {
-            plugin.getLogger().severe("Errore nel salvataggio di: " + file.getName());
+            plugin.getLogger().severe("An error occured upon saving: " + file.getName());
             plugin.getLogger().severe(e.toString());
         }
+    }
+
+    public void set(String path, Object value) {
+        config.set(path, value);
     }
 
     public boolean contains(String path) {
