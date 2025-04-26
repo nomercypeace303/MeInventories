@@ -1,47 +1,49 @@
 InventorySettings:
-  InventoryPath: plugin/MeInventories/Inventories/inventory.yml
   Type: blacklist
   # UUID only
   List:
-    - '73548558-7aa4-4cd5-9468-22bd9756187e'
-    - '30a4a162-815d-4ff6-bc77-ab7d1294bf1d'
-  Slots:
-    1:
-      SlotType: Item
-      Type: DIAMOND_SWORD
-      Name: '<blue>Diamond Sword'
-      Lore:
-        - 'nice sword'
-      CustomModelData: '104'
-      NBT:
-        - 'lucky ahh bitch'
-      Interactions:
-        Disable: true
+    - "73548558-7aa4-4cd5-9468-22bd9756187e"
+    - "30a4a162-815d-4ff6-bc77-ab7d1294bf1d"
+Components:
+  1:
+    Type: button
+    Attributes:
+      Slot: 15
+      Item:
+        ItemType: Diamond_sword
+        Name: "<green>Press for help"
+        Lore:
+          - "<red>hello"
+          - "<blue>world!"
+        CustomModelData: "104"
+      Locked: true
+      OnInteraction:
         Commands:
-          - 'help'
+          - "help"
         Messages:
-          - '<red>Interaction!'
-    2:
-      SlotType: Backpack
-      BackpackSlots: 2-6
-      Backpacks:
-        Small:
-          Unlocks: 2-3
-          Type: DIAMOND_SWORD
-          Name: '<blue>Diamond Sword'
-          Lore:
-            - 'nice sword'
-          CustomModelData: '104'
-          NBT:
-            - 'lucky ahh bitch'
-        Medium:
-          Unlocks: 2-3
-          Type: DIAMOND_SWORD
-          Name: '<blue>Diamond Sword'
-          Lore:
-            - 'nice sword'
-          CustomModelData: '104'
-          NBT:
-            - 'lucky ahh bitch'
+          - "here's some help!"
+  2:
+    Type: backpack
+    Attributes:
+      BackpackSlot:
+        Slot: 23
+        BackpackFile: backpack.yml
+      ItemSlot:
+        #The Slots must be in order for proper use
+        Slots: 9,10,11,12,13,18,19,20,21,22
+        Blank:
+          Locked: false
+          Item:
+            ItemType: Paper
+            Name: "<gray>Locked Slot"
+            Lore:
+              - "<red>hello"
+              - "<blue>world!"
+            CustomModelData: "104"
+          OnInteraction:
+            Messages:
+              - "<red>Buy a new backpack for additional slots"
+
+
 
 

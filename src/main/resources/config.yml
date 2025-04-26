@@ -7,3 +7,4 @@ PluginInfo:
   Version: 1.0.0
   # The file name in plugin/MeInventories/Languages/EX_ex.yml
   Language: EN_en.yml
+  Inventory: inventory.yml

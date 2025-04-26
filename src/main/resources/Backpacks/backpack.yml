@@ -1,0 +1,39 @@
+# backpacks use persistent data containers (Custom NBT's), that's for easy and lightweight item-saving
+# be careful of duplication glitches, because they CAN DUPLICATE EVERYTHING INSIDE THE BACKPACK
+# in a future update .Json local databases will be implemented
+
+# obtainable with the command: /Mei give <ID>
+Backpack:
+  #ID
+  1:
+    ItemType: Paper
+    Name: "<green>Small Backpack"
+    Lore:
+      - "<red>hello"
+      - "<blue>world!"
+    CustomModelData: "104"
+    # The slots that the backpack can open
+    Capacity: 4
+    CanBeOpened: true
+  #ID
+  2:
+    ItemType: Paper
+    Name: "<green>Medium Backpack"
+    Lore:
+      - "<red>hello"
+      - "<blue>world!"
+    CustomModelData: "104"
+    # The slots that the backpack can open
+    Capacity: 7
+    CanBeOpened: true
+  #ID
+  3:
+    ItemType: Paper
+    Name: "<green>Big Backpack"
+    Lore:
+      - "<red>hello"
+      - "<blue>world!"
+    CustomModelData: "104"
+    # The slots that the backpack can open
+    Capacity: 10
+    CanBeOpened: true
