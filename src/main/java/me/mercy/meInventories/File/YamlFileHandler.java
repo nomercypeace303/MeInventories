@@ -1,6 +1,7 @@
 package me.mercy.meInventories.File;
 
 import me.mercy.meInventories.MeInventories;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
@@ -59,6 +60,7 @@ public class YamlFileHandler {
     /*
         Tutti i getters
     */
+    public ConfigurationSection getSection(String path){return config.getConfigurationSection(path);}
     public Object get(String path) {return config.get(path);}
     public String getString(String path) {return config.getString(path);}
     public int getInt(String path) {return config.getInt(path);}

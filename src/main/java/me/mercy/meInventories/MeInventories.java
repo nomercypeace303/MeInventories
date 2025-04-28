@@ -12,24 +12,13 @@ public final class MeInventories extends JavaPlugin {
         main = this;
 
         /*
-            Configuration logic, when the configuration doesn't exist, or its blank,
+            Configuration logic, when the configuration doesn't exist, or it's blank,
             it creates the default configuration file
         */
         if (getConfig().getKeys(true).isEmpty()) {
             getConfig().options().copyDefaults(true);
             saveConfig();
         }
-
-        /*
-            First start logic, when the plugin starts for the first time
-            it creates the default inventory file
-
-        if (getConfig().getBoolean("PluginInfo.FirstStart", true)) {
-            YamlFileHandler firstStartFile = new YamlFileHandler("plugin/MeInvetories/Inventories/inventory.yml");
-            firstStartFile.set("Inventory.Slots.1.Item.Type", "DIAMOND_SWORD");
-            getConfig().set("PluginInfo.FirstStart", false);
-        }
-        */
     }
 
     @Override
